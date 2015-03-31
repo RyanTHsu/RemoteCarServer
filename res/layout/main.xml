@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="6dp"
+            android:layout_y="320dp"
+            android:text="Interval(msec)" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="46dp"
+            android:layout_y="300dp"
+            android:text="Interval" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="280dp"
+            android:text="Direction" />
+
+        <TextView
+            android:id="@+id/tv_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="115dp"
+            android:layout_y="280dp"
+            android:text="dir" />
+
+        <TextView
+            android:id="@+id/tv_dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="115dp"
+            android:layout_y="320dp"
+            android:text="dt_dt" />
+
+        <TextView
+            android:id="@+id/tv_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="115dp"
+            android:layout_y="300dp"
+            android:text="Steps" />
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="170dp"
+            android:layout_y="240dp"
+            android:text="@string/delay"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_delay"
+            android:layout_width="43dp"
+            android:layout_height="30dp"
+            android:layout_x="170dp"
+            android:layout_y="255dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="20"
+            android:textSize="12dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_rsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="115dp"
+            android:layout_y="240dp"
+            android:text="@string/r_setp"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_right"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_x="115dp"
+            android:layout_y="255dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="108"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_bsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="60dp"
+            android:layout_y="240dp"
+            android:text="@string/b_step"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_x="60dp"
+            android:layout_y="255dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="216"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_lsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="5dp"
+            android:layout_y="240dp"
+            android:text="@string/l_step"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_left"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_x="5dp"
+            android:layout_y="255dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="108"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_x="10dp"
+            android:layout_y="340dp"
+            android:text="@string/start"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_x="55dp"
+            android:layout_y="340dp"
+            android:text="@string/end"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_x="100dp"
+            android:layout_y="340dp"
+            android:text="@string/reset"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_x="189dp"
+            android:layout_y="299dp"
+            android:text="Quit" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>
